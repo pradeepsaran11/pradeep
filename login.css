@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    justify-self: center;
+justify-content: center;
+    align-content: center;
+  margin: 80px;
+    border: 1px solid rgb(100, 98, 98);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    background-color: transparent;
+    /* box-shadow: 2px 8px 2px 4px rgb(215, 211, 211); */
+   
+}
+
+.data{
+    line-height: 50px;
+}
+
+.username{
+    /* border: 2px solid black;
+    border-radius: 10px;
+    width: 250px;
+    background-color: white;
+    align-items: center;
+    justify-items: center; */
+    position: relative;
+    right: -10%;
+
+}
+
+.username input{
+    
+    border: 1px solid black;
+    width: 250px;
+    height: 30px;
+    border-radius: 20px;
+    /* text-align: center; */
+    
+    
+}
+
+
+.username i {
+ align-items: center;
+ justify-content: center;
+ position: absolute;
+ margin: 18px 15px;
+ 
+}
+
+.password input{
+    
+    border: 1px solid black;
+    width: 250px;
+    height: 30px;
+    border-radius: 20px;
+    /* text-align: center; */
+    
+    
+    
+}
+.password{
+     position: relative;
+    right: -10%;
+}
+
+.password i{
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    margin: 17px 10px;
+}
+
+.remember{
+    color: white;
+    font-size: 15px;
+    position: relative;
+     top: 90px;
+}
+
+.remember input{
+    margin: 10px 10px 10px;
+    
+}
+
+.login{
+    /* align-items: right;
+    justify-items: right; */
+    color: white;
+}
+
+.login button{
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+   border-radius: 15px;
+   background-color: white;
+   color: rgb(0, 0, 0);
+   position: relative;
+      top: 80%;
+   width: 300px;
+   
+  
+}
+
+.data li{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    position: relative;
+    left: 70%;
+    top: -10px;
+}
+
+
+.cancel i{
+    position: relative;
+    left: 2%;
+    top: -50px;
+}
+
+.cancel:hover {
+    cursor: pointer;
+}
+
+.login button:hover{
+    cursor: pointer;
+    background-color: #A09589;
+}
+
+.data li:hover{
+    cursor: pointer;
+}
+
+.data input{
+    padding: 20px 45px 20px 40px;
+}
+
+.heading {
+font-size: 40px;
+color: white;
+font-family: 'Times New Roman', Times, serif;
+position: relative;
+right: -26%;
+top: -10%;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+}

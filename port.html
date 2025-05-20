@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <link rel="stylesheet" href="port.css"/>
+</head>
+<body>
+
+  
+  <nav>
+    <div class="nav-container">
+      <div class="logo"><span>eklavya</span></div>
+      <div class="links">
+        <div class="link"><a href="#">Home</a></div>
+        <div class="link"><a href="#">Skills</a></div>
+        <div class="link"><a href="#">About</a></div>
+        <div class="link contact-btn"><a href="#">Contact</a></div>
+      </div>
+      <i class="fa-solid fa-bars hamburg"></i>
+    </div>
+
+    <div class="dropdown">
+      <div class="dropdown-links">
+        <a href="#">Home</a>
+        <a href="#">Skills</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <i class="fa-solid fa-xmark cancel"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="main-container">
+      <div class="image">
+        <img src="https://img.freepik.com/free-photo/smiling-young-beautiful-girl-pointing-right-side-with-copy-space_141793-92529.jpg" alt="Main Image">
+      </div>
+      <div class="content">
+        <h1>Hi, I'm <span>eklavya</span></h1>
+        <div class="typewriter">I'm a <span>Developer</span></div>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="button">
+          <button>Download CV</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><img src="htmllogo.png" alt="HTML"><p>HTML</p></div>
+      <div class="skill"><img src="csslogo.png" alt="CSS"><p>CSS</p></div>
+      <div class="skill"><img src="jslogo.png" alt="JavaScript"><p>JavaScript</p></div>
+      <div class="skill"><img src="clogo.png" alt="C Language"><p>C Language</p></div>
+      <div class="skill"><img src="pythonlogo.png" alt="Python"><p>Python</p></div>
+      <div class="skill"><img src="vscodelogo.png" alt="VS Code"><p>VS Code</p></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUrnmr3CB1oDs0WqiWPzNxENXCnRE-1yKVKw&s" alt="Myntra Clone"><p>Myntra Clone</p></div>
+      <div class="project"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv5TyTxQI9umvU2AYl8DnPEkqz2NGKKFW3uA&s" alt="Calculator"><p>Calculator</p></div>
+      <div class="project"><img src="https://png.pngtree.com/png-vector/20190521/ourlarge/pngtree-gallery-logo-icon-design-template-vector-png-image_1048779.jpg" alt="Image Gallery"><p>Image Gallery</p></div>
+      <div class="project"><img src="https://static.vecteezy.com/system/resources/previews/029/921/562/non_2x/id-card-on-white-background-flat-design-style-illustration-vector.jpg" alt="ID Card"><p>ID Card</p></div>
+      <div class="project"><img src="https://thumbs.dreamstime.com/b/logo-icon-vector-logos-icons-set-social-media-flat-banner-vectors-svg-eps-jpg-jpeg-paper-texture-glossy-emblem-wallpaper-210442240.jpg" alt="Amazon Clone"><p>Amazon Clone</p></div>
+      <div class="project"><img src="https://static.vecteezy.com/system/resources/previews/020/335/987/non_2x/netflix-logo-netflix-icon-free-free-vector.jpg" alt="Netflix Clone"><p>Netflix Clone</p></div>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="cert-list">
+      <div class="cert-item">
+        <h3>MERN Stack</h3>
+        <p>Completed training in HTML, CSS, and JavaScript for Web Development.</p>
+      </div>
+      <div class="cert-item">
+        <h3>Microsoft</h3>
+        <p>Attended Cyber Crime Awareness Workshop.</p>
+      </div>
+      <div class="cert-item">
+        <h3>Git & GitHub</h3>
+        <p>Introduction to version control systems and repository hosting.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script -->
+  <script>
+    const hamburger = document.querySelector('.hamburg');
+    const dropdown = document.querySelector('.dropdown');
+    const cancel = document.querySelector('.cancel');
+
+    hamburger.addEventListener('click', () => {
+      dropdown.style.display = 'flex';
+    });
+
+    cancel.addEventListener('click', () => {
+      dropdown.style.display = 'none';
+    });
+  </script>
+
+</body>
+</html>
